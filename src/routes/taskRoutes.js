@@ -1,7 +1,7 @@
 import express from "express";
 import {getTasks, createTask, toggleTask, deleteTask} from "../controllers/taskController.js";
 
-const router = express.Router;
+const router = express.Router();
 
 router.get("/", getTasks); // Rota para listar tarefas
 router.post("/add", createTask); // Rota para criar tarefa
